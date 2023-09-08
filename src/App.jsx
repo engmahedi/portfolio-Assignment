@@ -1,7 +1,9 @@
 import AboutMe from "./components/AboutMe"
+import Contact from "./components/Contact"
 import Experience from "./components/Experience"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+import Projects from "./components/Projects"
 import Sectionheading from "./components/Sectionheading"
 
 
@@ -14,6 +16,8 @@ const App=()=>{
       <Hero />
       <AboutMe /> 
       <Experience />
+      <Projects />
+      <Contact />
       
     </>
   )
