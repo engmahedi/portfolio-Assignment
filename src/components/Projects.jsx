@@ -28,7 +28,7 @@ const Projects = () => {
 
         <Sectionheading  subtitle="Browse My Recent" title="Projects"/>
         
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 md:px-5  gap-10">
           {
             projectData.map((project) => <SingleProject key={project.id } image={project.img} title={project.title} />) 
         }

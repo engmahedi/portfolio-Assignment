@@ -9,8 +9,8 @@ const Contact = () => {
       <div className="container mx-auto my-40">
         <Sectionheading subtitle="Get In Touch" title="Contact Me" />
         
-        <div class="grid grid-cols-3 gap-4">
-          <div class="col-start-2  bg-slate-100 py-7 mb-10 rounded-full px-10">
+        <div class="flex  justify-center">
+          <div class="  bg-slate-100 py-7 mb-10 rounded-full px-10">
             
             <div className="flex gap-10">
               <div className="flex gap-2 items-center">

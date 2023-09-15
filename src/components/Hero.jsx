@@ -8,8 +8,8 @@ function Hero() {
   return (
     <>
       <div className="container mx-auto py-40">
-        <div className="w-[60%] mx-auto bg-slate- grid grid-cols-2">
-          <div>
+        <div className="w-[60%] mx-auto gap-8 grid md:grid-cols-1 lg:grid-cols-2">
+          <div className='md:mb-40 text-center'>
             <img src="https://thriving-dragon-a3fcd9.netlify.app/assets/profile-pic.png"/>
           </div>
           <div className="flex justify-center items-center">

@@ -1,11 +1,7 @@
-import AboutMe from "./components/AboutMe"
-import Contact from "./components/Contact"
-import Experience from "./components/Experience"
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import Navbar from "./components/Navbar"
-import Projects from "./components/Projects"
-import Sectionheading from "./components/Sectionheading"
+import { BrowserRouter, Routes,Route } from "react-router-dom"
+import HomePage from "./Pages/HomePage"
+import ContactPage from "./Pages/ContactPage"
+import GallaryPage from "./Pages/GallaryPage"
 
 
 const App=()=>{
@@ -13,13 +9,14 @@ const App=()=>{
 
   return (
     <>
-      <Navbar />
-      <Hero />
-      <AboutMe /> 
-      <Experience />
-      <Projects />
-      <Contact />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage /> } />
+          <Route path="/contact" element={<ContactPage /> } />
+          <Route path="/gallary" element={<GallaryPage /> } />
+        </Routes>
+      
+      </BrowserRouter>
       
     </>
   )

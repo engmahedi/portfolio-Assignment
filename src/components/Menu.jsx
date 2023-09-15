@@ -1,30 +1,24 @@
 
+import React from "react";
+import { NavLink } from "react-router-dom";
+
+
+
 
 const Menu = () => {
-
-  const navbar = [ "About","Experience","Projects","Contact"];
   return (
     <>
-      
-      <div className="text-center">
-      <ul className="flex justify-center gap-10 text-2xl">
-
-{
-  
-    navbar.map((menu, i) => {
-      return <div className="p-5">
-          <li key={i} className="hover:border-b-2 border-slate-700"> {menu} </li>
-
-      </div>
-    })
-
-}
-     </ul>
+      <div >
+        <ul className="flex gap-4 text-2xl">
+          <NavLink className={({ isActive }) => isActive ? " text-green-500 font-bold" : ""} to="/">Home</NavLink>
+          
+          <NavLink className={({ isActive}) => isActive ? " text-green-500 font-bold" : ""} to="/gallary">Gallary</NavLink>
+          <NavLink className={({ isActive}) => isActive ? " text-green-500 font-bold" : ""} to="/contact">Contact</NavLink>
+        </ul>
       </div>
       
-    
     </>
-  )
-}
+  );
+};
 
 export default Menu;
